@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "node index.js"
+    "serve": "node index.js",
+    "docker:build" : "docker build -t tcnode .",
+    "docker:run" : "docker run dti -p 3001:3001 tcnode"
   },
   "dependencies": {
     "cors": "^2.8.4",
